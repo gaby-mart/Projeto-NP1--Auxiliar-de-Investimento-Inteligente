@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="#8e22bb"
+    android:fontFamily="@font/roboto">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="136dp"
+        android:layout_height="116dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capital Inicial:"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/capital"
+        android:layout_width="288dp"
+        android:layout_height="39dp"
+        android:background="@android:color/white"
+        android:hint="R$0,00"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:background="@drawable/edittextlayout"/>
+
+    <TextView
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="CDI:"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/cdi"
+        android:layout_width="288dp"
+        android:layout_height="39dp"
+        android:background="@android:color/white"
+        android:hint="%14.9"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:background="@drawable/edittextlayout"
+        />
+
+    <TextView
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Período (meses):"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tempoMeses"
+        android:layout_width="288dp"
+        android:layout_height="39dp"
+        android:hint="00/00/0000"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:background="@drawable/edittextlayout"/>
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="16dp"
+        android:backgroundTint="#5B7CFA"
+        />
+
+    <TextView
+        android:id="@+id/montanteFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Montante final: R$0,00"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        />
+
+</LinearLayout>
